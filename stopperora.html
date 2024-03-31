@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopperÓra</title>
+    <style>
+        body{
+            margin: 10vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+        h1{
+            text-align: center;
+        }
+        #btn_id{
+            margin-top: 20px;
+            
+            
+        }
+        .btn{
+            width: 80px;
+            height: 30px;
+            font-size: 1.2rem;
+            padding: 2px;
+        }
+        .time{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stopper Óra</h1>
+    <div id="uj"></div>
+ 
+    <div class="time">
+        <div id="ora">0</div>: 
+        <div id="minute">00</div> : 
+        <div id="seconds">00</div>
+    </div>
+    <div id="btn_id">
+    <button id="start" class="btn">Start</button>
+    <button id="stop" class="btn">Stop</button>
+    <button id="reset" class="btn">Reset</button>
+    <button id="resz_ido" class="btn">Részidő</button>
+    <div id="mert_ido" class="btn"></div>
+    </div>
+    <div id="display"></div>
+    
+    <script src="stopperora.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
