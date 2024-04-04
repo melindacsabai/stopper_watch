@@ -8,10 +8,9 @@ time.setMinutes(0);
 time.setSeconds(0);
 
 let timer = null
- let b = 0;
 function setTime (){
    
-    time.setSeconds(b++);
+    time.setSeconds(time.getSeconds()+1);
 
     uj.innerHTML = time.toLocaleTimeString("hu-HU", {hour: '2-digit', minute:'2-digit', second: '2-digit'});
 }
